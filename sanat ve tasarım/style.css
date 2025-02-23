@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+    margin-top: 0px; 
+}
+
+header {
+    background-color: #2c2c2c;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9b5d4f;
+    transform: scale(1.1);
+}
+
+#home {
+    background-color: #2c2c2c;
+    text-align: center;
+    padding: 120px 20px;
+    color: #fff;
+    position: relative;
+}
+
+#home h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#home p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#home button {
+    background-color: #9b5d4f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#home button:hover {
+    background-color: #7f4c3d;
+    transform: translateY(-5px);
+}
+
+#about {
+    padding: 80px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    animation: fadeIn 1s ease-out;
+}
+
+#services {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.service {
+    flex: 1 1 48%; 
+    min-height: 250px; 
+    padding: 30px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.service h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 18px;
+    color: #555;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .service {
+        width: 90%; 
+        min-height: 200px; 
+    }
+}
+#gallery {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    max-width: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #9b5d4f;
+}
+
+#testimonials {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.testimonial cite {
+    font-style: italic;
+    color: #9b5d4f;
+}
+
+#contact {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #9b5d4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #7f4c3d;
+}
+
+#contact p {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+    letter-spacing: 0.5px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    font-size: 18px;
+    margin: 12px auto;
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    max-width: 420px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact ul li i {
+    font-size: 22px;
+    color: #555;
+}
+
+#contact ul li:hover {
+    transform: scale(1.07);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #e0e0e0, #d6d6d6);
+}
+
+#contact ul li:hover i {
+    color: #222;
+} 
