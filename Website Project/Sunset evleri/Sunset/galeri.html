@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - SHİNE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f9f9f9; 
+            font-family: 'Arial', sans-serif;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+        .gallery-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+
+        .gallery-container figure {
+            width: 30%;
+            margin: 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px;
+            background-color: #fff; 
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-container figure:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: 300px; 
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #444;
+            font-style: italic;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        figcaption:hover {
+            color: #ff4500; 
+        }
+        @media (max-width: 768px) {
+            .gallery-container figure {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">SHINE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Hakkında.html">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Hizmetler.html">Hizmetler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="İletisim.html">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Galeri</h2>
+    <div class="gallery-container">
+        <figure>
+            <img src="image/resiim....jpg" alt="örnek resim 1">
+            <figcaption>Toplantı odamız </figcaption>
+        </figure>
+        <figure>
+            <img src="image/resiim44.jpg" alt="örnek resim 2">
+            <figcaption>Gerçekleştirdiğimiz etkinliklere ait görseller.</figcaption>
+        </figure>
+        <figure>
+            <img src="image/resim22.jpg" alt="örnek resim 3">
+            <figcaption>Yazılımcı ekip üyelerimizin görevlerini icra ettiği çalışma alanı.</figcaption>
+        </figure>
+        <figure>
+            <img src="image/resim...jpeg" alt="örnek resim 4">
+            <figcaption>Yazılımcı ekip üyelerimizin kendilerini daha verimli hissedebilmeleri amacıyla tahsis edilen özel çalışma odası.</figcaption>
+        </figure>
+        <figure>
+            <img src="image/resim51.jpg" alt="örnek resim  5">
+            <figcaption>Yeni projemizin detaylarına dair bir görsel.</figcaption>
+        </figure>
+        <figure>
+            <img src="image/Resiim.jpg" alt="örnek resim  6">
+            <figcaption>Stajyer ekip üyelerimizle, iş süreçlerimiz hakkında gerçekleştirdiğimiz değerlendirme toplantısı sırasında çekilen bir fotoğraf.</figcaption>
+        </figure>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+</body>
+</html>
