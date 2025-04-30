@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezervasyon Yap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+body {
+  overflow: auto;
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 1s ease, transform 1s ease;
+}
+@media (max-width: 768px) { 
+  .navbar-toggler-icon {
+    background-color: #08612c; 
+  }
+}
+body.loaded {
+  opacity: 1;
+  transform: translateY(0); 
+}
+.reservation-form {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reservation-form.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+  </style>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class="navbar-brand text-success" href="#">EGE'NİN KALBİ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-success" aria-current="page" href="Tarihi.html">TARİHİ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" aria-current="page" href="lezzetkesfi.html">LEZZET KEŞFİ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" aria-current="page" href="konaklama.html">KONAKLAMA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" aria-current="page" href="iletisim.html">İLETİŞİM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+  <div class="container my-5">
+    <h1 class="text-center text-success mb-4">Manisa Otel Rezervasyonu</h1>
+    <div class="success-message" id="successMessage"></div>
+    <section>
+      <div class="reservation-form">
+        <h4 class="form-heading text-success">Rezervasyon Yap</h4>
+        <form id="reservationForm" onsubmit="return handleSubmit(event)">
+          <div class="mb-3">
+            <label for="checkin" class="form-label">Giriş Tarihi</label>
+            <input type="date" id="checkin" name="checkin" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkout" class="form-label">Çıkış Tarihi</label>
+            <input type="date" id="checkout" name="checkout" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Ad Soyad</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-posta</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Telefon</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+          </div>
+          <button type="submit text-success" class="btn btn-custom text-success">Rezervasyonu Tamamla</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <footer class="text-dark pt-4 pb-4" style="background-color: rgb(8, 97, 44);">
+    <div class="row align-items-center col-12">
+      <div class="col-md-7 col-lg-8">
+        <div class="container text-center p-3">
+          <div class="row m-0 p-0">
+            <div class="col-sm-9 col-12">
+              <div class="row flex-column m-0 p-0 fs-10">
+                <div class="col-2 mx-3 fw-bold fs-3" style="padding-left: 5%; color: white;">Manisa</div>
+                <div class="col-7" style="color: white;">Tarih, Doğa, Lezzet ve Kültürün Buluştuğu Şehir</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-lg-4 text-end">
+        <div class="text-center text-white px-5 social-icons-container">
+          <p style="font-size: 30px; padding: 5% 0">
+            <a href="https://www.instagram.com/" target="_blank" class="text-white me-3" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" class="text-white me-3" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-white me-3" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.google.com/maps" target="_blank" class="text-white" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-geo"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center text-md-left p-3 m-0">
+      <div class="row text-start mx-4">
+        <div class="col-sm-3 mt-3" style="font-size: 17px; color: white;">
+          <p><strong>Manisa Tanıtım Ofisi</strong></p>
+          <p>Fatih Mahallesi, 45000 Manisa Merkez</p>
+          <p>T: +90 123 456 789</p>
+          <p style="line-height: 30px;">E: info@manisatanitim.gov.tr</p>
+        </div>
+        <div class="col-sm-2 col-lg-2 col-xl-2 mx-5 mt-3 p-0" style="line-height: 15px">
+          <p><a href="Tarihi.html" class="text-white text-decoration-none">Manisa'nın Tarihi</a></p>
+          <p><a href="lezzetkesfi.html" class="text-white text-decoration-none">Lezzetler</a></p>
+          <p><a href="konaklama.html" class="text-white text-decoration-none">Konaklama</a></p>
+          <p><a href="Rezervasyon.html" class="text-white text-decoration-none">Rezervasyon</a></p>
+          <p><a href="iletisim.html" class="text-white text-decoration-none">İletişim</a></p>
+        </div>
+        <div class="col-sm-3 col-lg-2 col-xl-2 mx-auto mt-3" style="line-height: 15px">
+          <p><a href="#" class="text-white text-decoration-none">Etkinlikler</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Doğa Güzellikleri</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Turlar</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Galeri</a></p>
+        </div>
+        <div class="col-sm-2 col-lg-3 col-xl-3 mx-auto mt-3" style="line-height: 15px">
+          <p><a href="#" class="text-white text-decoration-none">Sık Sorulan Sorular</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Yasal Bilgilendirme</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Basın Bültenleri</a></p>
+        </div>
+      </div>
+      <div class="container m-0 p-0 mx-auto">
+        <hr class="border-white border border-2" />
+      </div>
+      <div class="row text-start">
+        <div class="col-md-7 col-lg-8">
+          <div class="container justify-content-center" style="margin-left: 10%; color: white;">
+            © 2025 Manisa Tanıtım. Tüm Hakları Saklıdır.
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4 text-end">
+          <p class="mx-5 fw-bold">
+            web site <a class="text-decoration-none text-white" href="#">designed by S'hine</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+window.addEventListener('load', function() {
+  document.body.classList.add('loaded');
+  const reservationForm = document.querySelector('.reservation-form');
+  reservationForm.classList.add('show');
+});
+function handleSubmit(event) {
+  event.preventDefault(); 
+  const form = event.target;
+  const name = form.name.value;
+  const email = form.email.value;
+  document.getElementById('successMessage').style.display = 'block';
+  form.reset();
+  setTimeout(() => {
+    alert(`Sayın ${name}, rezervasyonunuz başarıyla alınmıştır!`);
+  }, 500);
+  return false; }
+  </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manisa'nın Lezzetleri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body{
+      overflow: auto;
+    }
+@media (max-width: 768px) { 
+  .navbar-toggler-icon {
+    background-color: #08612c; 
+  }
+}
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+    body {
+      background-color: #fffaf4;
+    }
+    .card-title {
+      color: #08612c;
+      font-weight: bold;
+    }
+    .card-text {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text-success" href="#">EGE'NİN KALBİ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-success" aria-current="page" href="index.html">MANİSA</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-success" aria-current="page" href="Tarihi.html">TARİHİ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" aria-current="page" href="konaklama.html">KONAKLAMA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" aria-current="page" href="iletisim.html">İLETİŞİM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  <section class="container mt-5">
+    <h1 class="text-success text-center mb-5">🍽️ Manisa'nın Özgün Lezzetleri: Gelenekten Geleceğe</h1>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/Manisa-Kebab" class="card-img-top" alt="Manisa Kebabı">
+          <div class="card-body">
+            <h5 class="card-title">Manisa Kebabı</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> Osmanlı saray mutfağının mirasıdır. Saray sofralarından halk mutfağına uzanmış özel bir lezzettir.<br>
+              <strong>Nasıl Yapılır?</strong> Marine edilmiş dana eti şişe dizilir, közde pişirilir. Altına tereyağlı pide serilir, yoğurt ve domates sos ile taçlandırılır.<br>
+              <strong>Özelliği:</strong> İskender’e benzer ama daha hafif ve yoğun aromalıdır.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/sinkonta-.jpg" class="card-img-top" alt="Sinkonta">
+          <div class="card-body">
+            <h5 class="card-title">Sinkonta</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> Ege mutfağının klasiklerinden, yaz aylarının favorisi.<br>
+              <strong>Nasıl Yapılır?</strong> Patlıcan, kabak, domates ve soğanlar dilimlenir. Zeytinyağı ve kekik ile fırına verilir.<br>
+              <strong>Özelliği:</strong> Hem soğuk hem sıcak tüketilebilir. Hafif ve sağlıklı!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/sevketi-bostan-.jpg" class="card-img-top" alt="Şevketi Bostan">
+          <div class="card-body">
+            <h5 class="card-title">Şevketi Bostan</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> Şifalı Ege otu olarak bilinir. Manisa pazarlarda ilkbaharda bolca bulunur.<br>
+              <strong>Nasıl Yapılır?</strong> Otlar temizlenir, kuzu eti ile limonlu şekilde pişirilir.<br>
+              <strong>Özelliği:</strong> Sağlıklı ve doyurucudur. Karaciğer dostudur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/tirit-.jpg" class="card-img-top" alt="Tirit">
+          <div class="card-body">
+            <h5 class="card-title">Tirit</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> Osmanlı döneminden kalan halk yemeğidir.<br>
+              <strong>Nasıl Yapılır?</strong> Bayat ekmek, et suyu ve yoğurtla ıslatılır. Üzerine kavrulmuş et ve tereyağı dökülür.<br>
+              <strong>Özelliği:</strong> Yoksul zamanların zengin lezzetidir.<br>
+              <strong>Yöresel Varyasyonlar: </strong> Manisa, Kastamonu, Sivas gibi birçok şehirde farklı şekillerde yapılır.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/mantartatlisi-.jpg" class="card-img-top" alt="Mantar Tatlısı">
+          <div class="card-body">
+            <h5 class="card-title">Mantar Tatlısı</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> Modern bir yorum, yöresel meyvelerle yapılır.<br>
+              <strong>Nasıl Yapılır?</strong> Mantar şeklinde yapılan kurabiye hamuru, meyve aromalarıyla tatlandırılır.<br>
+              <strong>Özelliği:</strong> Görsel ve lezzet olarak farklı bir deneyim sunar.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/sekerli-pide.jpg" class="card-img-top" alt="Şekerli Pide">
+          <div class="card-body">
+            <h5 class="card-title">Şekerli Pide</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> Ramazan aylarında Manisa'da yaygın olarak yapılır.<br>
+              <strong>Nasıl Yapılır?</strong> Hamurun üzerine tahin, toz şeker ve biraz susam eklenerek fırınlanır.<br>
+              <strong>Özelliği:</strong> Tatlı ve gevrek bir atıştırmalık.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/sultaniye-uzumu-.jpg" class="card-img-top" alt="Sultaniye Üzümü">
+          <div class="card-body">
+            <h5 class="card-title">Sultaniye Üzümü</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> Manisa’nın en meşhur tarım ürünü.<br>
+              <strong>Nasıl Yetişir?</strong> Sıcak iklim ve zengin topraklarda yetişir. Hem yaş hem kuru tüketilir.<br>
+              <strong>Özelliği:</strong> Tatlı, iri taneli ve aromatiktir.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="./img/mesir macunu.jpeg" class="card-img-top" alt="Mesir Macunu">
+          <div class="card-body">
+            <h5 class="card-title">Mesir Macunu</h5>
+            <p class="card-text">
+              <strong>Tarihi:</strong> 500 yıllık geçmişe sahiptir. Yavuz Sultan Selim’in eşi Hafsa Sultan için yapılmıştır.<br>
+              <strong>Nasıl Yapılır?</strong> 41 çeşit baharatla hazırlanır. Her baharat farklı bir şifayı temsil eder.<br>
+              <strong>Özelliği:</strong> Hem tatlı hem şifalıdır. Her yıl festivali düzenlenir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-dark pt-4 pb-4" style="background-color: rgb(8, 97, 44);">
+    <div class="row align-items-center col-12">
+      <div class="col-md-7 col-lg-8">
+        <div class="container text-center p-3">
+          <div class="row m-0 p-0">
+            <div class="col-sm-9 col-12">
+              <div class="row flex-column m-0 p-0 fs-10">
+                <div class="col-2 mx-3 fw-bold fs-3" style="padding-left: 5%; color: white;">Manisa</div>
+                <div class="col-7" style="color: white;">Tarih, Doğa, Lezzet ve Kültürün Buluştuğu Şehir</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-lg-4 text-end">
+        <div class="text-center text-white px-5 social-icons-container">
+          <p style="font-size: 30px; padding: 5% 0">
+            <a href="https://www.instagram.com/" target="_blank" class="text-white me-3" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" class="text-white me-3" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-white me-3" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.google.com/maps" target="_blank" class="text-white" style="text-decoration: none; outline: none; border: none;">
+              <i class="bi bi-geo"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center text-md-left p-3 m-0">
+      <div class="row text-start mx-4">
+        <div class="col-sm-3 mt-3" style="font-size: 17px; color: white;">
+          <p><strong>Manisa Tanıtım Ofisi</strong></p>
+          <p>Fatih Mahallesi, 45000 Manisa Merkez</p>
+          <p>T: +90 123 456 789</p>
+          <p style="line-height: 30px;">E: info@manisatanitim.gov.tr</p>
+        </div>
+        <div class="col-sm-2 col-lg-2 col-xl-2 mx-5 mt-3 p-0" style="line-height: 15px">
+          <p><a href="Tarihi.html" class="text-white text-decoration-none">Manisa'nın Tarihi</a></p>
+          <p><a href="lezzetkesfi.html" class="text-white text-decoration-none">Lezzetler</a></p>
+          <p><a href="konaklama.html" class="text-white text-decoration-none">Konaklama</a></p>
+          <p><a href="Rezervasyon.html" class="text-white text-decoration-none">Rezervasyon</a></p>
+          <p><a href="iletisim.html" class="text-white text-decoration-none">İletişim</a></p>
+        </div>
+  
+        <div class="col-sm-3 col-lg-2 col-xl-2 mx-auto mt-3" style="line-height: 15px">
+          <p><a href="#" class="text-white text-decoration-none">Etkinlikler</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Doğa Güzellikleri</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Turlar</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Galeri</a></p>
+        </div>
+  
+        <div class="col-sm-2 col-lg-3 col-xl-3 mx-auto mt-3" style="line-height: 15px">
+          <p><a href="#" class="text-white text-decoration-none">Sık Sorulan Sorular</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Yasal Bilgilendirme</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Basın Bültenleri</a></p>
+        </div>
+      </div>
+  
+      <div class="container m-0 p-0 mx-auto">
+        <hr class="border-white border border-2" />
+      </div>
+      <div class="row text-start">
+        <div class="col-md-7 col-lg-8">
+          <div class="container justify-content-center" style="margin-left: 10%; color: white;">
+            © 2025 Manisa Tanıtım. Tüm Hakları Saklıdır.
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4 text-end">
+          <p class="mx-5 fw-bold">
+            web site <a class="text-decoration-none text-white" href="#">designed by S'hine</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('visible');
+        }, index * 200); 
+    });
+});
+  </script>
+</body>
+</html>

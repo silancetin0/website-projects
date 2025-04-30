@@ -1,0 +1,119 @@
+body{
+  overflow: auto;
+}
+.dark-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/manisaa.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) { 
+  .navbar-toggler-icon {
+    background-color: #08612c;
+  }
+}
+#hero h1, #hero p {
+  opacity: 0;
+  transform: translateY(20px); 
+}
+.animate__fadeIn {
+  animation: fadeIn 1s forwards ease-out; 
+}
+.animate__delay-1s {
+  animation-delay: 0.5s; 
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+.shine{
+  padding: 0px 0 ;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#lezzetkesfi h2 {
+  color: #08612c; 
+}
+button {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 30px;
+  background-color: #08612c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #08612c;
+}
+.generic {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+.generic h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.card {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 20px;
+}
+.card-body h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+.card-body p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.card-body .btn {
+  background-color: #08612c;
+  color: white;
+  border: none;
+}
+.card-body .btn:hover {
+  background-color: #08612c;
+}
+@media (max-width: 768px) {
+  .card-body h3 {
+      font-size: 1.5rem;
+  }
+}
+#contact {
+  margin-top: 70px; 
+}
